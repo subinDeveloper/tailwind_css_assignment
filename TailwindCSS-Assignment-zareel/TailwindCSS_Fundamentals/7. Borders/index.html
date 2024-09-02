@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Borders</title>
+  </head>
+  <body>
+    Border Width & Colors
+    <!-- https://tailwindcss.com/docs/border-width -->
+<div class="condiner bg-black h-60 w-[75%] h-96 items-center flex justify-between">
+  <div class="border h-36 w-36 text-center items-center justify-center flex  text-xl text-white">border</div>
+ <div class="border-2 h-36 w-36 text-center items-center justify-center flex text-xl text-white border-sky-500">border-2</div>
+<div class="border-4 h-36 w-36 text-center items-center justify-center flex text-xl text-white border-sky-500">border-4</div>
+<div class="border-8 h-36 w-36 text-center items-center justify-center flex text-xl text-white border-sky-500">border-8</div> 
+
+</div>
+     Border Radius
+    <!-- https://tailwindcss.com/docs/border-radius -->
+<div class="condiner bg-black w-[75%] items-center h-96 flex justify-between">
+   <div class="rounded ... text-xl font-semibold h-36 w-36 text-center flex justify-center items-center bg-blue-400">rounded</div>
+<div class="rounded-md ... text-xl font-semibold h-36 w-36 text-center flex justify-center items-center bg-blue-400">rounded-md</div>
+<div class="rounded-lg ... text-xl font-semibold h-36 w-36 text-center flex justify-center items-center bg-blue-400">rounded-lg</div>
+<div class="rounded-full ... text-xl font-semibold h-36 w-36 text-center flex justify-center items-center bg-blue-400">rounded-full</div>
+</div>
+
+Specific Sides
+<div class="condiner bg-black w-[75%] h-96 flex items-center justify-between">
+<div class="rounded-t-lg h-36 w-36 text-center flex justify-center items-center text-xl font- bold bg-rose-500">rounded-t-lg</div>
+<div class="rounded-r-lg h-36 w-36 text-center flex justify-center items-center text-xl font- bold bg-rose-500">rounded-r-lg</div>
+<div class="rounded-b-lg h-36 w-36 text-center flex justify-center items-center text-xl font- bold bg-rose-500">rounded-b-lg</div>
+<div class="rounded-l-lg h-36 w-36 text-center flex justify-center items-center text-xl font- bold bg-rose-500">rounded-l-lg</div>
+</div>
+Rounding corner separately
+<div class="condiner bg-black w-[75%] h-96 flex items-center justify-between">
+<div class="rounded-tl-lg h-36 w-36 text-center flex justify-center items-center text-white text-xl font- bold bg-green-500">rounded-tl-lg</div>
+<div class="rounded-tr-lg h-36 w-36 text-center flex justify-center items-center text-white text-xl font- bold bg-green-500">rounded-tr-lg</div>
+<div class="rounded-br-lg h-36 w-36 text-center flex justify-center items-center text-white text-xl font- bold bg-green-500">rounded-br-lg</div>
+<div class="rounded-bl-lg h-36 w-36 text-center flex justify-center items-center text-white text-xl font- bold bg-green-500">rounded-bl-lg</div>
+</div>
+logical properties
+<div class="condiner bg-black w-[75%] h-96 ">
+  <div dir="ltr">
+    <div class="rounded-s-lg text-center items-center flex justify-center font-semibold h-36 w-36 bg-indigo-500">rounded-s-lg</div>
+  <div>
+  
+  <div dir="rtl">
+    <div class="rounded-s-lg text-center items-center flex justify-center font-semibold h-36 w-36 bg-indigo-500">rounded-s-lg</div>
+  <div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Container & Spacing</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    1. Margin 
+    <!-- https://tailwindcss.com/docs/margin -->
+   <div class="Container bg-black text-white gap-4 flex flex-col p-7 w-[400px]">
+    <div class="mt-20 bg-green-500 flex justify-center items-center h-16 w-20">mt-20</div>
+    <div class="ml-8 bg-green-500 flex justify-center items-center h-16 w-20">ml-8</div>
+    <div class="mr-4 bg-green-500 flex justify-center items-center h-16 w-20">mr-4</div>
+    <div class="mb-18 bg-green-500 flex justify-center items-center h-16 w-20">mb-18</div>
+    <br>
+    <div class="mx-8 bg-pink-500 flex justify-center items-center h-16 w-20">mx-8</div>
+    <div class="my-14 bg-pink-500 flex justify-center items-center h-16 w-20">my-14</div>
+    <div class="m-12 bg-pink-500 flex justify-center items-center h-16 w-20">m-8</div>
+    <div class="-mt-8 bg-pink-500 flex justify-center items-center h-16 w-20">-mt-8</div>
+    <br>
+    <div dir="ltr">
+      <div class="ms-8 bg-indigo-500 flex justify-center items-center h-16 w-20">ms-8</div>
+      <div class="me-8 bg-indigo-500 flex justify-center items-center h-16 w-20">me-8</div>
+    <div>
+    
+    <div dir="rtl">
+      <div class="ms-8 bg-indigo-500 flex justify-center items-center h-16 w-20">ms-8</div>
+      <div class="me-8 bg-indigo-500 flex justify-center items-center h-16 w-20">me-8</div>
+    </div>
+  </div>
+</div>
+
+    2. Arbitrary Spacing 
+     <!-- https://tailwindcss.com/docs/border-spacing#arbitrary-values -->
+<div class="Container bg-black p-7 text-white ">
+  <table class="border-separate border-spacing-2  border border-slate-800">
+    <div>
+      <th class="border border-slate-600 text-3xl">state</th>
+      <th class="border border-slate-600 text-3xl">city</th>
+    </div>
+  
+      <tr>
+        <td class="border border-slate-500">Kerala</td>
+        <td class="border border-slate-500">Palakkad</td>
+      </tr>
+    
+      <tr>
+        <th class="border border-slate-500">Chennai</th>
+        <th class="border border-slate-500">Selam</th>
+      </tr>
+  
+      <tr>
+        <th class="border border-slate-500">Karnataka</th>
+        <th class="border border-slate-500">Kothur</th>
+      </tr>
+  <div>
+  </table>
+  <br>
+  <table class="border-separate border-spacing-2  border border-slate-800">
+    <div>
+      <th class="border border-slate-600 text-3xl">Taluk</th>
+      <th class="border border-slate-600 text-3xl">village</th>
+    </div>
+  
+      <tr>
+        <td class="border border-slate-500">Pattambi</td>
+        <td class="border border-slate-500">Pattambi</td>
+      </tr>
+    
+      <tr>
+        <th class="border border-slate-500">Kochi</th>
+        <th class="border border-slate-500">Panamplly</th>
+      </tr>
+  
+      <tr>
+        <th class="border border-slate-500">Kasarkodu</th>
+        <th class="border border-slate-500">Karippa</th>
+      </tr>
+  </table>
+  </div>
+</div>
+     3.Padding
+    <!-- https://tailwindcss.com/docs/padding -->
+ <div class="flex flex-col gap-4 container bg-black w-[400px]">
+  <div class="flex pt-10 justify-center items-center bg-pink-500 h-20 w-24">pt-10</div>
+  <div class="flex pr-12 justify-center items-center bg-rose-500 h-20 w-24">pr-4</div>
+  <div class="flex pb-8 items-center justify-center bg-purple-500 h-20 w-24">pb-8</div>
+  <div class="flex pl-9 justify-center items-center bg-amber-500 h-20 w-24">pl-9</div>
+ </div>
+
+    <!-- https://tailwindcss.com/docs/space -->
+    1.Space Between X 
+    <div class="container bg-black w-[400px]">
+      <div class="flex flex-col space-y-10 text-3xl text-yellow-500">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+    </div>
+    2.Space Between Y
+    <div class="flex container bg-black text-3xl text-white w-[400px]">
+      <div class="flex flex-row-reverse space-x-4 space-x-reverse text-indigo-300">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+    </div>
+    
+     
+     
+     
+     </div>
+  </body>
+</html>

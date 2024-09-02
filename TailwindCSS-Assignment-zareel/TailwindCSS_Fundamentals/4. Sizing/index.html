@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sizing</title>
+  </head>
+  <body class="p-20">
+     Width 
+    <!-- https://tailwindcss.com/docs/width -->
+<div class="condiner bg-black text-white gap-2 flex flex-col w-[500px]">
+<div class="w-96 py-2 bg-green-500">w-96</div>
+<div class="w-80 py-2 bg-green-500">w-80</div>
+<div class="w-64 py-2 bg-green-500">w-64</div>
+<div class="w-48 py-2 bg-green-500">w-48</div>
+<div class="w-40 py-2 bg-green-500">w-40</div>
+<div class="w-32 py-2 bg-green-500">w-32</div>
+<div class="w-24 py-2 bg-green-500">w-24</div>
+</div>
+    Percentages
+    <div class="condiner bg-black flex gap-2 flex-col ">
+      <div class="flex gap-2 ">
+        <div class="w-1/2  py-2 bg-yellow-500 text-2xl">w-1/2</div>
+        <div class="w-1/2  py-2 bg-yellow-500 text-2xl">w-1/2</div>
+      </div>
+      <div class="flex gap-2">
+        <div class="w-2/5 py-2 bg-indigo-500 text-2xl">w-2/5</div>
+        <div class="w-3/5 py-2 bg-indigo-500 text-2xl">w-3/5</div>
+      </div>
+      <div class="flex gap-2">
+        <div class="w-1/3 bg-green-400 py-2 text-2xl">w-1/3</div>
+        <div class="w-2/3 bg-green-400 py-2 text-2xl">w-2/3</div>
+      </div>
+      <div class="flex gap-2">
+        <div class="w-1/4 bg-white text-2xl py-2">w-1/4</div>
+        <div class="w-3/4 bg-white text-2xl py-2">w-3/4</div>
+      </div>
+      <div class="flex gap-2">
+        <div class="w-1/5 text-2xl bg-blue-400 py-2">w-1/5</div>
+        <div class="w-4/5 text-2xl bg-blue-400 py-2">w-4/5</div>
+      </div>
+      <div class="flex ...">
+        <div class="w-1/6 ...">w-1/6</div>
+        <div class="w-5/6 ...">w-5/6</div>
+      </div>
+      <div>
+        <div class="w-full bg-red-400 py-2 text-2xl">w-full</div>
+      </div>
+    </div>
+
+     Max Width 
+    <!-- https://tailwindcss.com/docs/max-width -->
+    <div class="condiner bg-black">
+      <div class="w-full max-w-96 text-white  py-4 text-xl bg-yellow-500">max-w-96</div>
+      <div class="w-full max-w-80 text-white  py-4 text-xl bg-green-400">max-w-80</div>
+      <div class="w-full max-w-64 text-white  py-4 text-xl bg-indigo-400">max-w-64</div>
+      <div class="w-full max-w-48 text-white  py-4 text-xl bg-rose-800">max-w-48</div>
+      <div class="w-full max-w-40 text-white  py-4 text-xl bg-red-600">max-w-40</div>
+      <div class="w-full max-w-32 text-white  py-4 text-xl bg-green-900">max-w-32</div>
+      <div class="w-full max-w-24 text-white  py-4 text-xl bg-yellow-400">max-w-24</div>
+    </div>
+     Width of the viewport
+     <div class="bg-black condiner ">
+      <div>
+        <div class="w-full bg-blue-400 py-2 text-2xl">w-full</div>
+      </div>
+    </div>
+     100% of container 
+     <div class="h-56 p-2 condiner bg-black">
+      <div class="size-full text-2xl text-white justify-center items-center flex">size-full</div>
+    </div>
+     Arbitrary Width
+  <div class="condiner bg-black">
+    <svg class="stroke-1 ..."></svg>
+    <svg class="stroke-2 ..."></svg> /*
+  </div>
+
+     Height (Most of the same options as widths) 
+     <div class="h-96 condiner bg-black gap-2 flex">
+      <div class="min-h-80 ... bg-blue-400">min-h-80</div>
+      <div class="min-h-64 ... bg-blue-400">min-h-64</div>
+      <div class="min-h-48 ... bg-blue-400">min-h-48</div>
+      <div class="min-h-40 ... bg-blue-400">min-h-40</div>
+      <div class="min-h-32 ... bg-blue-400">min-h-32</div>
+      <div class="min-h-24 ... bg-blue-400">min-h-24</div>/*
+      <div class="min-h-full ...">min-h-full</div>
+    </div>
+    
+    <!-- https://tailwindcss.com/docs/height -->
+    Min Height
+ <div class="condiner bg-black flex flex-row gap-2">
+<div class="h-96 bg-rose-800 ">h-96</div>
+<div class="h-80 bg-rose-800 ">h-80</div>
+<div class="h-64 bg-rose-800 ">h-64</div>
+<div class="h-48 bg-rose-800 ">h-48</div>
+<div class="h-40 bg-rose-800 ">h-40</div>
+<div class="h-32 bg-rose-800 ">h-32</div>/*
+<div class="h-24 bg-rose-800 ">h-24</div>
+ </div>
+    <!-- https://tailwindcss.com/docs/min-height -->
+    <div class="h-96 condiner bg-black flex ">
+      <div class="min-h-80 bg-indigo-500 ">min-h-80</div>
+      <div class="min-h-64 bg-indigo-500 ">min-h-64</div>
+      <div class="min-h-48 bg-indigo-500 ">min-h-48</div>
+      <div class="min-h-40 bg-indigo-500 ">min-h-40</div>
+      <div class="min-h-32 bg-indigo-500 ">min-h-32</div>
+      <div class="min-h-24 bg-indigo-500 ">min-h-24</div>
+      <div class="min-h-full ...">min-h-full</div>/*
+    </div>
+    <!-- Max Height -->
+    <!-- https://tailwindcss.com/docs/max-height -->
+    <div class="h-96 condiner bg-black flex gap-2">
+      <div class="h-full max-h-80 bg-green-400 ">max-h-80</div>
+      <div class="h-full max-h-64 bg-green-400 ">max-h-64</div>
+      <div class="h-full max-h-48 bg-green-400 ">max-h-48</div>
+      <div class="h-full max-h-40 bg-green-400 ">max-h-40</div>
+      <div class="h-full max-h-32 bg-green-400 ">max-h-32</div>
+      <div class="h-full max-h-24 bg-green-400 ">max-h-24</div>
+      <div class="h-full max-h-full ...">max-h-full</div>
+    </div>
+   Full screen height
+   <div class="h-96 p-2 condiner bg-black">
+    <div class="size-full text-2xl text-yellow-400 flex justify-center px-2 items-center">size-full</div>
+  </div>
+    Width Auto
+    <div class="max-w-auto condiner bg-black text-white">
+      <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollar idea right there. Just sell the tops.</p>
+    </div>
+  </body>
+</html>
